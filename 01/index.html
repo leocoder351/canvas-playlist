@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas的width和height</title>
+</head>
+<body>
+  
+  <canvas id="myCanvas" width="500" height="500"></canvas>
+  <canvas id="myCanvas2" width="500" height="500" style="width: 200px; height: 200px;"></canvas>
+
+  <script>
+    var myCanvas = document.getElementById('myCanvas');
+    var context = myCanvas.getContext('2d');
+    var myCanvas2 = document.getElementById('myCanvas2');
+    var context2 = myCanvas2.getContext('2d');
+
+    var img = new Image();
+    img.onload = function () {
+      context.drawImage
+    }
+
+  </script>
+</body>
+</html>
