@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Canvas的width和height</title>
+  <style>
+    canvas {
+      border: 1px solid red;
+    }
+  </style>
 </head>
 <body>
   
@@ -16,11 +21,18 @@
     var context = myCanvas.getContext('2d');
     var myCanvas2 = document.getElementById('myCanvas2');
     var context2 = myCanvas2.getContext('2d');
-
     var img = new Image();
+
     img.onload = function () {
-      context.drawImage
-    }
+      context.drawImage(img, 0, 0, myCanvas.width, myCanvas.height);
+      context2.drawImage(img, 0, 0, myCanvas2.width, myCanvas2.height);
+
+      console.log(2222);
+      console.log(myCanvas2.width);
+      console.log(myCanvas2.height);
+    };
+
+    img.src = './images/test.jpg';
 
   </script>
 </body>
